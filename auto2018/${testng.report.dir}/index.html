@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-s1">
+              <span class="suite-name border-failed">s1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-s1">
+                    <span>C:\Users\xuan\eclipse-workspace1\auto2018\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-s1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-s1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-s1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-s1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-s1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-s1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 4 failed,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-s1" class="hide-methods failed suite-s1"> (hide)</a> <!-- hide-methods failed suite-s1 -->
+                      <a href="#" panel-name="suite-s1" class="show-methods failed suite-s1"> (show)</a> <!-- show-methods failed suite-s1 -->
+                    </span>
+                    <div class="method-list-content failed suite-s1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice" hash-for-method="addNotice( , 管理层, 标题不能为空)">addNotice( , 管理层, 标题不能为空)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice" hash-for-method="addNotice(通告,  , 来源不能为空)">addNotice(通告,  , 来源不能为空)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice_time" hash-for-method="testTime(16-7-8, 日期格式有误)">testTime(16-7-8, 日期格式有误)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice_time" hash-for-method="testTime(2019-04-05, 日期不存在)">testTime(2019-04-05, 日期不存在)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-s1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-s1" class="hide-methods passed suite-s1"> (hide)</a> <!-- hide-methods passed suite-s1 -->
+                      <a href="#" panel-name="suite-s1" class="show-methods passed suite-s1"> (show)</a> <!-- show-methods passed suite-s1 -->
+                    </span>
+                    <div class="method-list-content passed suite-s1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice" hash-for-method="addNotice(通告, 管理层, 新增保存成功)">addNotice(通告, 管理层, 新增保存成功)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.AddrList" hash-for-method="addrList">addrList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.ReInfor" hash-for-method="enterInfor">enterInfor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice_time" hash-for-method="enterNotice">enterNotice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice" hash-for-method="enterNotice">enterNotice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="login(admin, , 密码不能为空)">login(admin, , 密码不能为空)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="login(admin, 12345, 密码不对)">login(admin, 12345, 密码不对)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="login(, 123456aa, 用户名不能为空)">login(, 123456aa, 用户名不能为空)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="login(adyom, 123456aa, 用户不存在)">login(adyom, 123456aa, 用户不存在)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.AddrList" hash-for-method="login1">login1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice" hash-for-method="login2">login2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.ReInfor" hash-for-method="login3">login3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice_time" hash-for-method="login4">login4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="loginsuccess">loginsuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Login" hash-for-method="openBrower">openBrower</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.ReInfor" hash-for-method="reInfor1">reInfor1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.ReInfor" hash-for-method="reInfor2">reInfor2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.AddrList" hash-for-method="searchList(亮)">searchList(亮)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.AddrList" hash-for-method="searchList(曹操)">searchList(曹操)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.AddrList" hash-for-method="searchList(曹)">searchList(曹)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-s1" title="com.webtest.xinhu_personal.Addnotice_time" hash-for-method="testTime(2016-07-08, 新增保存成功)">testTime(2016-07-08, 新增保存成功)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-s1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-s1" class="panel s1">
+          <div class="suite-s1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.Addnotice_time</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTime(16-7-8, 日期格式有误)">
+                  </a> <!-- testTime(16-7-8, 日期格式有误) -->
+                  <span class="method-name">testTime</span>
+                  <span class="parameters">(16-7-8, 日期格式有误)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.webtest.xinhu_personal.Addnotice_time.testTime(Unknown Source)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTime(2019-04-05, 日期不存在)">
+                  </a> <!-- testTime(2019-04-05, 日期不存在) -->
+                  <span class="method-name">testTime</span>
+                  <span class="parameters">(2019-04-05, 日期不存在)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.webtest.xinhu_personal.Addnotice_time.testTime(Unknown Source)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-failed -->
+          <div class="suite-s1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.Addnotice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNotice( , 管理层, 标题不能为空)">
+                  </a> <!-- addNotice( , 管理层, 标题不能为空) -->
+                  <span class="method-name">addNotice</span>
+                  <span class="parameters">( , 管理层, 标题不能为空)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.webtest.xinhu_personal.Addnotice.addNotice(Unknown Source)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNotice(通告,  , 来源不能为空)">
+                  </a> <!-- addNotice(通告,  , 来源不能为空) -->
+                  <span class="method-name">addNotice</span>
+                  <span class="parameters">(通告,  , 来源不能为空)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.webtest.xinhu_personal.Addnotice.addNotice(Unknown Source)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-failed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.Addnotice_time</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterNotice">
+                  </a> <!-- enterNotice -->
+                  <span class="method-name">enterNotice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login4">
+                  </a> <!-- login4 -->
+                  <span class="method-name">login4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTime(2016-07-08, 新增保存成功)">
+                  </a> <!-- testTime(2016-07-08, 新增保存成功) -->
+                  <span class="method-name">testTime</span>
+                  <span class="parameters">(2016-07-08, 新增保存成功)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.Addnotice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNotice(通告, 管理层, 新增保存成功)">
+                  </a> <!-- addNotice(通告, 管理层, 新增保存成功) -->
+                  <span class="method-name">addNotice</span>
+                  <span class="parameters">(通告, 管理层, 新增保存成功)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterNotice">
+                  </a> <!-- enterNotice -->
+                  <span class="method-name">enterNotice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login2">
+                  </a> <!-- login2 -->
+                  <span class="method-name">login2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.AddrList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addrList">
+                  </a> <!-- addrList -->
+                  <span class="method-name">addrList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login1">
+                  </a> <!-- login1 -->
+                  <span class="method-name">login1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchList(亮)">
+                  </a> <!-- searchList(亮) -->
+                  <span class="method-name">searchList</span>
+                  <span class="parameters">(亮)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchList(曹操)">
+                  </a> <!-- searchList(曹操) -->
+                  <span class="method-name">searchList</span>
+                  <span class="parameters">(曹操)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchList(曹)">
+                  </a> <!-- searchList(曹) -->
+                  <span class="method-name">searchList</span>
+                  <span class="parameters">(曹)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.ReInfor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterInfor">
+                  </a> <!-- enterInfor -->
+                  <span class="method-name">enterInfor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login3">
+                  </a> <!-- login3 -->
+                  <span class="method-name">login3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reInfor1">
+                  </a> <!-- reInfor1 -->
+                  <span class="method-name">reInfor1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reInfor2">
+                  </a> <!-- reInfor2 -->
+                  <span class="method-name">reInfor2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.xinhu_personal.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, , 密码不能为空)">
+                  </a> <!-- login(admin, , 密码不能为空) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin, , 密码不能为空)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, 12345, 密码不对)">
+                  </a> <!-- login(admin, 12345, 密码不对) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin, 12345, 密码不对)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(, 123456aa, 用户名不能为空)">
+                  </a> <!-- login(, 123456aa, 用户名不能为空) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(, 123456aa, 用户名不能为空)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(adyom, 123456aa, 用户不存在)">
+                  </a> <!-- login(adyom, 123456aa, 用户不存在) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(adyom, 123456aa, 用户不存在)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginsuccess">
+                  </a> <!-- loginsuccess -->
+                  <span class="method-name">loginsuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openBrower">
+                  </a> <!-- openBrower -->
+                  <span class="method-name">openBrower</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+        </div> <!-- panel s1 -->
+        <div panel-name="test-xml-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\xuan\eclipse-workspace1\auto2018\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;s1&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.webtest.core.WebTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;wangdonghui&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webtest.xinhu_personal.Login&quot;/&gt;
+      &lt;class name=&quot;com.webtest.xinhu_personal.Addnotice_time&quot;/&gt;
+      &lt;class name=&quot;com.webtest.xinhu_personal.AddrList&quot;/&gt;
+      &lt;class name=&quot;com.webtest.xinhu_personal.Addnotice&quot;/&gt;
+      &lt;class name=&quot;com.webtest.xinhu_personal.ReInfor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- wangdonghui --&gt;
+&lt;/suite&gt; &lt;!-- s1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">wangdonghui (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_s1');
+function tableData_s1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addNotice')
+data.setCell(0, 2, 'com.webtest.xinhu_personal.Addnotice')
+data.setCell(0, 3, 19647);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addNotice')
+data.setCell(1, 2, 'com.webtest.xinhu_personal.Addnotice')
+data.setCell(1, 3, 19638);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addNotice')
+data.setCell(2, 2, 'com.webtest.xinhu_personal.Addnotice')
+data.setCell(2, 3, 19637);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testTime')
+data.setCell(3, 2, 'com.webtest.xinhu_personal.Addnotice_time')
+data.setCell(3, 3, 16433);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testTime')
+data.setCell(4, 2, 'com.webtest.xinhu_personal.Addnotice_time')
+data.setCell(4, 3, 16422);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testTime')
+data.setCell(5, 2, 'com.webtest.xinhu_personal.Addnotice_time')
+data.setCell(5, 3, 16374);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'enterInfor')
+data.setCell(6, 2, 'com.webtest.xinhu_personal.ReInfor')
+data.setCell(6, 3, 9835);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addrList')
+data.setCell(7, 2, 'com.webtest.xinhu_personal.AddrList')
+data.setCell(7, 3, 9775);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login3')
+data.setCell(8, 2, 'com.webtest.xinhu_personal.ReInfor')
+data.setCell(8, 3, 6845);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'login2')
+data.setCell(9, 2, 'com.webtest.xinhu_personal.Addnotice')
+data.setCell(9, 3, 6738);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'login1')
+data.setCell(10, 2, 'com.webtest.xinhu_personal.AddrList')
+data.setCell(10, 3, 6714);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'login4')
+data.setCell(11, 2, 'com.webtest.xinhu_personal.Addnotice_time')
+data.setCell(11, 3, 6704);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'enterNotice')
+data.setCell(12, 2, 'com.webtest.xinhu_personal.Addnotice')
+data.setCell(12, 3, 6546);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'enterNotice')
+data.setCell(13, 2, 'com.webtest.xinhu_personal.Addnotice_time')
+data.setCell(13, 3, 6538);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'openBrower')
+data.setCell(14, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(14, 3, 3604);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'login')
+data.setCell(15, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(15, 3, 3436);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'login')
+data.setCell(16, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(16, 3, 3381);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginsuccess')
+data.setCell(17, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(17, 3, 3376);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'login')
+data.setCell(18, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(18, 3, 3371);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'login')
+data.setCell(19, 2, 'com.webtest.xinhu_personal.Login')
+data.setCell(19, 3, 3363);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'searchList')
+data.setCell(20, 2, 'com.webtest.xinhu_personal.AddrList')
+data.setCell(20, 3, 3347);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'searchList')
+data.setCell(21, 2, 'com.webtest.xinhu_personal.AddrList')
+data.setCell(21, 3, 3333);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'searchList')
+data.setCell(22, 2, 'com.webtest.xinhu_personal.AddrList')
+data.setCell(22, 3, 3313);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'reInfor1')
+data.setCell(23, 2, 'com.webtest.xinhu_personal.ReInfor')
+data.setCell(23, 3, 3296);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'reInfor2')
+data.setCell(24, 2, 'com.webtest.xinhu_personal.ReInfor')
+data.setCell(24, 3, 18);
+window.suiteTableData['s1']= { tableData: data, tableDiv: 'times-div-s1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-s1">
+              </div> <!-- times-div-s1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.xinhu_personal.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openBrower</span>
+                <span class="method-start">5204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(adyom, 123456aa, 用户不存在)</span>
+                <span class="method-start">8825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, 12345, 密码不对)</span>
+                <span class="method-start">12261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(, 123456aa, 用户名不能为空)</span>
+                <span class="method-start">15633 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, , 密码不能为空)</span>
+                <span class="method-start">19015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginsuccess</span>
+                <span class="method-start">22380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">25757 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.xinhu_personal.Addnotice_time</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">26342 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login4</span>
+                <span class="method-start">30373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterNotice</span>
+                <span class="method-start">37078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testTime(2016-07-08, 新增保存成功)</span>
+                <span class="method-start">43621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTime(2019-04-05, 日期不存在)</span>
+                <span class="method-start">60054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testTime(16-7-8, 日期格式有误)</span>
+                <span class="method-start">76477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">92852 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.xinhu_personal.AddrList</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">93316 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login1</span>
+                <span class="method-start">97287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addrList</span>
+                <span class="method-start">104002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchList(曹操)</span>
+                <span class="method-start">113778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchList(亮)</span>
+                <span class="method-start">117091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchList(曹)</span>
+                <span class="method-start">120425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">123772 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.xinhu_personal.Addnotice</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">124225 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login2</span>
+                <span class="method-start">128169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterNotice</span>
+                <span class="method-start">134908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNotice( , 管理层, 标题不能为空)</span>
+                <span class="method-start">141996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNotice(通告,  , 来源不能为空)</span>
+                <span class="method-start">161634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNotice(通告, 管理层, 新增保存成功)</span>
+                <span class="method-start">181272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">200919 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.xinhu_personal.ReInfor</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">201401 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login3</span>
+                <span class="method-start">205441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterInfor</span>
+                <span class="method-start">212287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reInfor1</span>
+                <span class="method-start">222125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reInfor2</span>
+                <span class="method-start">225421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">225439 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,5 @@
+username,password,result
+admin,12345,密码不对
+atom,123456,用户不存在
+ ,123456,用户名不能为空
+admin,,密码不能为空

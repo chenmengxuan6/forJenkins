@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="25" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="s1" duration-ms="225885" started-at="2018-12-07T01:49:55Z" finished-at="2018-12-07T01:53:41Z">
+    <groups>
+    </groups>
+    <test name="wangdonghui" duration-ms="225885" started-at="2018-12-07T01:49:55Z" finished-at="2018-12-07T01:53:41Z">
+      <class name="com.webtest.xinhu_personal.Addnotice">
+        <test-method status="PASS" signature="doBeforeSuite()[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="doBeforeSuite" is-config="true" duration-ms="3943" started-at="2018-12-07T01:51:59Z" finished-at="2018-12-07T01:52:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeSuite -->
+        <test-method status="PASS" signature="login2()[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="login2" duration-ms="6738" started-at="2018-12-07T01:52:03Z" finished-at="2018-12-07T01:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login2 -->
+        <test-method status="PASS" signature="enterNotice()[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="enterNotice" duration-ms="6546" started-at="2018-12-07T01:52:10Z" depends-on-methods="com.webtest.xinhu_personal.Addnotice.login2" finished-at="2018-12-07T01:52:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterNotice -->
+        <test-method status="FAIL" signature="addNotice(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="addNotice" duration-ms="19637" started-at="2018-12-07T01:52:17Z" data-provider="excel1" depends-on-methods="com.webtest.xinhu_personal.Addnotice.enterNotice" finished-at="2018-12-07T01:52:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[管理层]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[标题不能为空]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.webtest.xinhu_personal.Addnotice.addNotice(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNotice -->
+        <test-method status="FAIL" signature="addNotice(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="addNotice" duration-ms="19638" started-at="2018-12-07T01:52:37Z" data-provider="excel1" depends-on-methods="com.webtest.xinhu_personal.Addnotice.enterNotice" finished-at="2018-12-07T01:52:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[通告]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[来源不能为空]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.webtest.xinhu_personal.Addnotice.addNotice(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNotice -->
+        <test-method status="PASS" signature="addNotice(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="addNotice" duration-ms="19647" started-at="2018-12-07T01:52:56Z" data-provider="excel1" depends-on-methods="com.webtest.xinhu_personal.Addnotice.enterNotice" finished-at="2018-12-07T01:53:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[通告]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[管理层]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[新增保存成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNotice -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.xinhu_personal.Addnotice@6f7fd0e6]" name="doAfterMethod" is-config="true" duration-ms="482" started-at="2018-12-07T01:53:16Z" finished-at="2018-12-07T01:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.xinhu_personal.Addnotice -->
+      <class name="com.webtest.xinhu_personal.ReInfor">
+        <test-method status="PASS" signature="doBeforeSuite()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="doBeforeSuite" is-config="true" duration-ms="4040" started-at="2018-12-07T01:53:17Z" finished-at="2018-12-07T01:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeSuite -->
+        <test-method status="PASS" signature="login3()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="login3" duration-ms="6845" started-at="2018-12-07T01:53:21Z" finished-at="2018-12-07T01:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login3 -->
+        <test-method status="PASS" signature="enterInfor()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="enterInfor" duration-ms="9835" started-at="2018-12-07T01:53:27Z" depends-on-methods="com.webtest.xinhu_personal.ReInfor.login3" finished-at="2018-12-07T01:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInfor -->
+        <test-method status="PASS" signature="reInfor1()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="reInfor1" duration-ms="3296" started-at="2018-12-07T01:53:37Z" depends-on-methods="com.webtest.xinhu_personal.ReInfor.enterInfor" finished-at="2018-12-07T01:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reInfor1 -->
+        <test-method status="PASS" signature="reInfor2()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="reInfor2" duration-ms="18" started-at="2018-12-07T01:53:41Z" depends-on-methods="com.webtest.xinhu_personal.ReInfor.enterInfor" finished-at="2018-12-07T01:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reInfor2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.xinhu_personal.ReInfor@3e6fa38a]" name="doAfterMethod" is-config="true" duration-ms="440" started-at="2018-12-07T01:53:41Z" finished-at="2018-12-07T01:53:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.xinhu_personal.ReInfor -->
+      <class name="com.webtest.xinhu_personal.Addnotice_time">
+        <test-method status="PASS" signature="doBeforeSuite()[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="doBeforeSuite" is-config="true" duration-ms="4030" started-at="2018-12-07T01:50:22Z" finished-at="2018-12-07T01:50:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeSuite -->
+        <test-method status="PASS" signature="login4()[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="login4" duration-ms="6704" started-at="2018-12-07T01:50:26Z" finished-at="2018-12-07T01:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login4 -->
+        <test-method status="PASS" signature="enterNotice()[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="enterNotice" duration-ms="6538" started-at="2018-12-07T01:50:32Z" depends-on-methods="com.webtest.xinhu_personal.Addnotice_time.login4" finished-at="2018-12-07T01:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterNotice -->
+        <test-method status="PASS" signature="testTime(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="testTime" duration-ms="16433" started-at="2018-12-07T01:50:39Z" data-provider="txt3" depends-on-methods="com.webtest.xinhu_personal.Addnotice_time.enterNotice" finished-at="2018-12-07T01:50:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2016-07-08]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[新增保存成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTime -->
+        <test-method status="FAIL" signature="testTime(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="testTime" duration-ms="16422" started-at="2018-12-07T01:50:55Z" data-provider="txt3" depends-on-methods="com.webtest.xinhu_personal.Addnotice_time.enterNotice" finished-at="2018-12-07T01:51:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019-04-05]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[日期不存在]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.webtest.xinhu_personal.Addnotice_time.testTime(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTime -->
+        <test-method status="FAIL" signature="testTime(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="testTime" duration-ms="16374" started-at="2018-12-07T01:51:12Z" data-provider="txt3" depends-on-methods="com.webtest.xinhu_personal.Addnotice_time.enterNotice" finished-at="2018-12-07T01:51:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[16-7-8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[日期格式有误]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.webtest.xinhu_personal.Addnotice_time.testTime(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTime -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.xinhu_personal.Addnotice_time@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="464" started-at="2018-12-07T01:51:28Z" finished-at="2018-12-07T01:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.xinhu_personal.Addnotice_time -->
+      <class name="com.webtest.xinhu_personal.Login">
+        <test-method status="PASS" signature="doBeforeSuite()[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="doBeforeSuite" is-config="true" duration-ms="5198" started-at="2018-12-07T01:49:55Z" finished-at="2018-12-07T01:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeSuite -->
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="openBrower" duration-ms="3604" started-at="2018-12-07T01:50:00Z" finished-at="2018-12-07T01:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrower -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="login" duration-ms="3436" started-at="2018-12-07T01:50:04Z" data-provider="txt2" depends-on-methods="com.webtest.xinhu_personal.Login.openBrower" finished-at="2018-12-07T01:50:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adyom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户不存在]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="login" duration-ms="3371" started-at="2018-12-07T01:50:07Z" data-provider="txt2" depends-on-methods="com.webtest.xinhu_personal.Login.openBrower" finished-at="2018-12-07T01:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[密码不对]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="login" duration-ms="3381" started-at="2018-12-07T01:50:11Z" data-provider="txt2" depends-on-methods="com.webtest.xinhu_personal.Login.openBrower" finished-at="2018-12-07T01:50:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456aa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="login" duration-ms="3363" started-at="2018-12-07T01:50:14Z" data-provider="txt2" depends-on-methods="com.webtest.xinhu_personal.Login.openBrower" finished-at="2018-12-07T01:50:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[密码不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="loginsuccess()[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="loginsuccess" duration-ms="3376" started-at="2018-12-07T01:50:18Z" depends-on-methods="com.webtest.xinhu_personal.Login.login" finished-at="2018-12-07T01:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginsuccess -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.xinhu_personal.Login@3ffc5af1]" name="doAfterMethod" is-config="true" duration-ms="585" started-at="2018-12-07T01:50:21Z" finished-at="2018-12-07T01:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.xinhu_personal.Login -->
+      <class name="com.webtest.xinhu_personal.AddrList">
+        <test-method status="PASS" signature="doBeforeSuite()[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="doBeforeSuite" is-config="true" duration-ms="3971" started-at="2018-12-07T01:51:29Z" finished-at="2018-12-07T01:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeSuite -->
+        <test-method status="PASS" signature="login1()[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="login1" duration-ms="6714" started-at="2018-12-07T01:51:32Z" finished-at="2018-12-07T01:51:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1 -->
+        <test-method status="PASS" signature="addrList()[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="addrList" duration-ms="9775" started-at="2018-12-07T01:51:39Z" depends-on-methods="com.webtest.xinhu_personal.AddrList.login1" finished-at="2018-12-07T01:51:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addrList -->
+        <test-method status="PASS" signature="searchList(java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="searchList" duration-ms="3313" started-at="2018-12-07T01:51:49Z" data-provider="txt1" depends-on-methods="com.webtest.xinhu_personal.AddrList.addrList" finished-at="2018-12-07T01:51:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[曹操]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchList -->
+        <test-method status="PASS" signature="searchList(java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="searchList" duration-ms="3333" started-at="2018-12-07T01:51:52Z" data-provider="txt1" depends-on-methods="com.webtest.xinhu_personal.AddrList.addrList" finished-at="2018-12-07T01:51:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[亮]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchList -->
+        <test-method status="PASS" signature="searchList(java.lang.String)[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="searchList" duration-ms="3347" started-at="2018-12-07T01:51:56Z" data-provider="txt1" depends-on-methods="com.webtest.xinhu_personal.AddrList.addrList" finished-at="2018-12-07T01:51:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[曹]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchList -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.xinhu_personal.AddrList@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="453" started-at="2018-12-07T01:51:59Z" finished-at="2018-12-07T01:51:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.xinhu_personal.AddrList -->
+    </test> <!-- wangdonghui -->
+  </suite> <!-- s1 -->
+</testng-results>
